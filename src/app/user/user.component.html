@@ -1,0 +1,64 @@
+<p class="login-title">List User</p>
+
+<div class="container">
+    <!-- // search -->
+    <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Search" (input)="onSearch($event)">
+    </div>
+
+    <!-- create -->
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name"  (input)="onChange($event,'name')" [value] = "newUser.name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" (input)="onChange($event,'age')" [value] = "newUser.age" >
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" (input)="onChange($event,'phone')" [value] = "newUser.phone">
+        </div>
+        <div class="form-group">
+            <label for="avatarUrl">Avatar</label>
+            <input type="text" class="form-control" id="avatarUrl" (input)="onChange($event,'avatar')" [value] = "newUser.avatar">
+        </div>
+        <div style="margin-top:20px;">
+            <button type="button" class="btn btn-primary" (click)="onSubmit()" [disabled]="!onValidate(newUser)" >Create</button>
+        </div>
+
+    </form>
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Avatar</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userFilter">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.phone}}</td>
+                <td>
+                    <img src="" alt="" height="100" [src]="user.avatar">
+                </td>
+                <td>
+                    <button class="btn btn-danger" (click)="remove(user.id)">Delete</button>
+                    <button class="btn btn-info" (click)="onEdit(user)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>
