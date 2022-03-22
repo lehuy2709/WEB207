@@ -77,6 +77,8 @@ export class ProductComponent implements OnInit {
     }
     return true
   }
+ 
+
 
 
 }
