@@ -1,1 +1,24 @@
-<p>student works!</p>
+<p>List Student</p>
+<p>{{students | json}}</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Tên</th>
+      <th scope="col">Lớp</th>
+      <th scope="col" colspan="2">Thao Tác</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let std of students">
+      <td>{{ std.id }}</td>
+      <td>{{ std.name }}</td>
+      <td>{{ std.class }}</td>
+      <td>
+        <a routerLink="/student/{{std.id}}" class="btn btn-danger">Details</a>
+        <button class="btn btn-info">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
