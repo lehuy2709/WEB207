@@ -13,6 +13,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { HttpClientModule } from '@angular/common/http';
 import { StudentComponent } from './student/student.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component'
+import { StudentService } from './services/student.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
     FormsModule, // đưa vào để các component con có thể sử dụng
     HttpClientModule
   ],
-  providers: [],
+  providers: [StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
