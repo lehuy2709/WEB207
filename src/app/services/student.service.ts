@@ -1,9 +1,18 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+const apiUrl = 'http://localhost:3000/students'
 @Injectable({
   providedIn: 'root'
 })
 export class StudentService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+  getStudents(){
+    return this.http.get(apiUrl)
+  }
+  // get 1 thằng
+  getStudent(id: number | string){
+    return this.http.get(`${apiUrl}/${id}`)
+  }
 }

@@ -4,7 +4,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductComponent } from './product/product.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { StudentComponent } from './student/student.component';
+import { StudentFormComponent } from './student-form/student-form.component';
 import { UserComponent } from './user/user.component';
+
 
 
 const routes: Routes = [
@@ -12,6 +16,10 @@ const routes: Routes = [
   path : '',
   component : AppComponent
   },
+  {
+    path : 'home',
+    component : AppComponent
+    },
   {
     path : 'product',
     component : ProductComponent
@@ -27,6 +35,18 @@ const routes: Routes = [
   {
     path : 'product/:id',
     component : ProductDetailComponent
+  },
+  {
+    path : 'student',
+    component : StudentComponent
+  },
+  {
+    path : 'student/:id',
+    component : StudentDetailComponent
+  },
+  {
+    path : 'student/form',
+    component : StudentFormComponent
   }
 ];
 
