@@ -10,6 +10,9 @@ import { ProductComponent } from './product/product.component';
 // import thành phần form
 import { FormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StudentComponent } from './student/student.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component'
 
 @NgModule({
   declarations: [
@@ -17,13 +20,16 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     LoginComponent,
     UserComponent,
     ProductComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    StudentComponent,
+    StudentDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule // đưa vào để các component con có thể sử dụng
+    FormsModule, // đưa vào để các component con có thể sử dụng
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
