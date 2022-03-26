@@ -12,7 +12,7 @@ export class StudentService {
     return this.http.get(apiUrl)
   }
   // get 1 thằng
-  getStudent(id: number | string) {
+  getStudent(id: undefined | string) {
     return this.http.get(`${apiUrl}/${id}`)
   }
   deleteStudent(id: number | string) {

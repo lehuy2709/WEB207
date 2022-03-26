@@ -1,9 +1,9 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "Lê Văn Huy",
-      "class": "WE16304"
+      "name": "Lê Văn Huy 12",
+      "class": "WE16304",
+      "id": 1
     },
     {
       "id": 2,
@@ -19,11 +19,6 @@
       "name": "Huy",
       "class": "a2",
       "id": 4
-    },
-    {
-      "name": "Iphone 13 Pro Max",
-      "class": "41241241",
-      "id": 5
     }
   ]
 }
