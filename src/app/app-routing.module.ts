@@ -12,10 +12,10 @@ import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AppComponent
-  },
+  // {
+  //   path: '',
+  //   component: AppComponent
+  // },
   {
     path: 'home',
     component: AppComponent
@@ -28,10 +28,10 @@ const routes: Routes = [
     path: 'user',
     component: UserComponent
   },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
+  // {
+  //   path: 'login',
+  //   component: LoginComponent
+  // },
   {
     path: 'product/:id',
     component: ProductDetailComponent

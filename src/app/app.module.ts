@@ -15,9 +15,11 @@ import { StudentComponent } from './student/student.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component'
 import { StudentService } from './services/student.service';
 import { StudentFormComponent } from './student-form/student-form.component';
+import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { AsideComponent } from './layout/aside/aside.component';
+
 
 @NgModule({
   declarations: [
@@ -29,9 +31,10 @@ import { AsideComponent } from './layout/aside/aside.component';
     StudentComponent,
     StudentDetailComponent,
     StudentFormComponent,
+    LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    AsideComponent
+    AsideComponent,
   ],
   imports: [
     BrowserModule,
