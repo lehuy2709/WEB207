@@ -7,19 +7,23 @@ import { StudentService } from '../services/student.service';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-
-  students: any
-
-
+  students: any;
   constructor(private studentService: StudentService) { }
 
   ngOnInit(): void {
+    this.onGetList();
+  }
+
+  onGetList() {
     this.studentService.getStudents().subscribe((data) => {
-      this.students = data
-      console.log(this.students);
-    })
+      this.students = data;
+    });
+  }
 
-
+  onDelete(id: number|string) {
+    this.studentService.deleteStudent(id).subscribe((data) => {
+      this.onGetList();
+    });
   }
 
 }

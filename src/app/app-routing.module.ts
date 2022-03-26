@@ -41,13 +41,17 @@ const routes: Routes = [
     component : StudentComponent
   },
   {
+    path : 'student/form',
+    component : StudentFormComponent
+  },
+  {
+    path : 'student/form/:id',
+    component : StudentFormComponent
+  },
+  {
     path : 'student/:id',
     component : StudentDetailComponent
   },
-  {
-    path : 'student/form',
-    component : StudentFormComponent
-  }
 ];
 
 @NgModule({
