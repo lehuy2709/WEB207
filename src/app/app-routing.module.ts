@@ -13,44 +13,44 @@ import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
-  path : '',
-  component : AppComponent
+    path: '',
+    component: AppComponent
   },
   {
-    path : 'home',
-    component : AppComponent
-    },
-  {
-    path : 'product',
-    component : ProductComponent
+    path: 'home',
+    component: AppComponent
   },
   {
-    path : 'user',
-    component : UserComponent
+    path: 'product',
+    component: ProductComponent
   },
   {
-    path : 'login',
-    component : LoginComponent
+    path: 'user',
+    component: UserComponent
   },
   {
-    path : 'product/:id',
-    component : ProductDetailComponent
+    path: 'login',
+    component: LoginComponent
   },
   {
-    path : 'student',
-    component : StudentComponent
+    path: 'product/:id',
+    component: ProductDetailComponent
   },
   {
-    path : 'student/form',
-    component : StudentFormComponent
+    path: 'student',
+    component: StudentComponent
   },
   {
-    path : 'student/form/:id',
-    component : StudentFormComponent
+    path: 'student/form',
+    component: StudentFormComponent
   },
   {
-    path : 'student/:id',
-    component : StudentDetailComponent
+    path: 'student/form/:id',
+    component: StudentFormComponent
+  },
+  {
+    path: 'student/:id',
+    component: StudentDetailComponent
   },
 ];
 

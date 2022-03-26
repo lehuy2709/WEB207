@@ -15,9 +15,18 @@ export class StudentFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.activateRoute.snapshot.params['id']
-    this.studentService.getStudent(this.id).subscribe((data => {
-      this.student = data
-    }))
+    if (this.id) {
+      this.studentService.getStudent(this.id).subscribe((data => {
+        this.student = data
+      }))
+    }
+    else {
+      this.student = {
+        name: "",
+        class: ""
+      }
+    }
+
   }
   onSubmit(obj: { name: string, class: string }) {
     //return thoát khỏi hàm
