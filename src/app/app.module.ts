@@ -23,6 +23,7 @@ import { PostComponent } from './post/post.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PostService } from './services/post.service';
 
 
 @NgModule({
@@ -51,7 +52,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule, // đưa vào để các component con có thể sử dụng
     HttpClientModule
   ],
-  providers: [StudentService],
+  providers: [StudentService,PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

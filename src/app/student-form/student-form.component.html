@@ -35,7 +35,7 @@
       />
       <div class="" *ngIf="studentForm.form.dirty">
         <p *ngIf="class.errors?.['required']" class="alert alert-danger">Lớp không được để trống</p>
-        <p *ngIf="name.errors?.['maxlength']" class="alert alert-danger">Lớp tối đa 32 kí tự</p>
+        <p *ngIf="class.errors?.['maxlength']" class="alert alert-danger">Lớp tối đa 32 kí tự</p>
       </div>
     </div>
     <button type="submit" class="btn btn-success" [disabled] ="studentForm.form.invalid">Create</button>

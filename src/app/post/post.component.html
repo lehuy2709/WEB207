@@ -1,1 +1,24 @@
-<p>post works!</p>
+<p>List Post</p>
+<a routerLink="/posts/form" class="btn btn-success">Create</a>
+<table class="table">
+
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
+      <th scope="col" colspan="3">Thao Tác</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ps of posts">
+      <td>{{ ps.id }}</td>
+      <td>{{ ps.title }}</td>
+      <td>{{ ps.content }}</td>
+      <td>{{ ps.status }}</td>
+      <td>
+        <button (click)="onDelete(ps.id)" class="btn btn-info">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

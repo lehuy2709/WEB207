@@ -19,6 +19,37 @@
       "name": "Huy Vip",
       "class": "WE1678182",
       "id": 4
+    },
+    {
+      "name": "aaa12312312",
+      "class": "1323123",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Title 1",
+      "content": "Huy đẹp trai số 1",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "title": "Title 2",
+      "content": "Huy đẹp trai số 2",
+      "status": 0
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "content": "Huy đẹp trai số 3",
+      "status": 1
+    },
+    {
+      "title": "233232",
+      "content": "233232",
+      "status": "1",
+      "id": 4
     }
   ]
 }
