@@ -8,6 +8,9 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
 import { StudentComponent } from './student/student.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { UserComponent } from './user/user.component';
+import { PostComponent } from './post/post.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 
 
@@ -52,6 +55,25 @@ const routes: Routes = [
     path: 'student/:id',
     component: StudentDetailComponent
   },
+  {
+    path: 'posts',
+    component: PostComponent,
+  },
+  {
+    path: 'posts/form',
+    component: PostFormComponent
+  },
+  {
+    path: 'posts/form/:id',
+    component: PostFormComponent
+  },
+  {
+    path: 'posts/:id',
+    component: PostDetailComponent
+  },
+
+
+
 ];
 
 @NgModule({

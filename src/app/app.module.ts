@@ -19,6 +19,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { AsideComponent } from './layout/aside/aside.component';
+import { PostComponent } from './post/post.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,8 +39,12 @@ import { AsideComponent } from './layout/aside/aside.component';
     HeaderComponent,
     FooterComponent,
     AsideComponent,
+    PostComponent,
+    PostDetailComponent,
+    PostFormComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
