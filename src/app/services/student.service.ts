@@ -26,4 +26,7 @@ export class StudentService {
   updateStudent(id: number | string, obj: { name: string, class: string }) {
     return this.http.put(`${apiUrl}/${id}`, obj)
   }
+  updateStatus(id: number | string, obj:any) {
+    return this.http.put(`${apiUrl}/${id}`, obj)
+  }
 }

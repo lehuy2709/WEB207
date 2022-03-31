@@ -20,10 +20,20 @@ export class StudentComponent implements OnInit {
     });
   }
 
-  onDelete(id: number|string) {
+  onDelete(id: number | string) {
     this.studentService.deleteStudent(id).subscribe((data) => {
       this.onGetList();
     });
+  }
+  parentChangeStatus(newStatus: number, student: any) {
+    this.studentService.updateStatus(student.id, {
+      ...student,
+      status: newStatus
+    }).subscribe((data) => {
+      this.onGetList()
+    })
+
+
   }
 
 }

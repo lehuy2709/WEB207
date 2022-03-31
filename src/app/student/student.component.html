@@ -1,5 +1,4 @@
 <p>List Student</p>
-<p>{{students | json}}</p>
 <a routerLink="/student/form" class="btn btn-success">Create</a>
 <table class="table">
 
@@ -8,6 +7,7 @@
       <th scope="col">Id</th>
       <th scope="col">Tên</th>
       <th scope="col">Lớp</th>
+      <th scope="col">Trạng Thái</th>
       <th scope="col" colspan="3">Thao Tác</th>
     </tr>
   </thead>
@@ -16,6 +16,7 @@
       <td>{{ std.id }}</td>
       <td>{{ std.name }}</td>
       <td>{{ std.class }}</td>
+      <td><app-status-btn [status] ="std.status" (changeStatus)="parentChangeStatus($event,std)"></app-status-btn></td>
       <td>
         <a routerLink="/student/form/{{std.id}}" class="btn btn-success">Edit</a>
         <a routerLink="/student/{{std.id}}" class="btn btn-danger">Details</a>

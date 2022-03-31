@@ -24,6 +24,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './services/post.service';
+import { ShowErrorComponent } from './components/show-error/show-error.component';
+import { StatusBtnComponent } from './components/status-btn/status-btn.component';
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import { PostService } from './services/post.service';
     PostComponent,
     PostDetailComponent,
     PostFormComponent,
+    ShowErrorComponent,
+    StatusBtnComponent,
   ],
   imports: [
     ReactiveFormsModule,

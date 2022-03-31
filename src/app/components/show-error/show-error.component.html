@@ -1,0 +1,11 @@
+<div *ngIf="formField.dirty">
+  <p *ngIf="formField.errors?.['required']" class="alert alert-danger">
+  {{key}}  bắt buộc nhập
+  </p>
+  <p *ngIf="formField.errors?.['minlength']" class="alert alert-danger">
+    {{key}} tối thiểu 6 kí tự
+  </p>
+  <p *ngIf="formField.errors?.['maxlength']" class="alert alert-danger">
+    {{key}} tối đa 32 kí tự
+  </p>
+</div>
